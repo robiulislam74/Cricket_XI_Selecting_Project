@@ -70,6 +70,7 @@ function App() {
     />
     :
     <Selected_Players
+    handleToggleButton={handleToggleButton}
     selectPlayers={selectPlayers}
     handleDeleteSelectedPlayer={handleDeleteSelectedPlayer}
     />
