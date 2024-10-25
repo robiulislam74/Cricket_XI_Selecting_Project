@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './App.css'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import Available from './components/Available/Available'
 import Available_Players from './components/Available_Players/Available_Players'
 import Banner from './components/Banner/Banner'
@@ -26,29 +28,43 @@ function App() {
     if(freeMoney>=bidding_price){
       setFreeMoney(freeMoney - bidding_price)
       if(selectPlayers.length >= maximumNumberOfSelect){
-      return alert("Warning! You can maximum 6 players select.")
+        toast.error("Warning! You can maximum 6 players select.", {
+          position: "top-center"
+        })
       }else{
         const isExist = selectPlayers.find(selectPlayer => selectPlayer.id === player.id)
         isExist
         ?
-        alert("Warning! Player already Selected.")
+        toast.error(`Warning! ${player.name} already selected`, {
+          position: "top-center"
+        })
         :
+        toast.success(`Congratulations! ${player.name} is now in your Squad`, {
+          position: "top-center"
+        })
         setSelectPlayers([...selectPlayers,player])
       }
       
     }else{
-      return alert("Not Available Your Coin!")
+     return toast.error("Not Available Your Coin!", {
+        position: "top-center"
+      });
     }
   }
 
   const handleDeleteSelectedPlayer = (deletePlayer) =>{
     const deletedPlayer = selectPlayers.filter(selectPlayer => selectPlayer.id !== deletePlayer.id)
     setSelectPlayers(deletedPlayer)
+    toast.warning("Player Removed!")
   }
+
 
   return (
    <>
     <div className='container mx-auto'>
+    <div>
+    <ToastContainer/>
+    </div>
       <Navbar 
       freeMoney={freeMoney}
       />

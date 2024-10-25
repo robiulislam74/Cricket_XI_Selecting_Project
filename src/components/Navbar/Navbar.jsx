@@ -18,7 +18,7 @@ const Navbar = ({freeMoney}) => {
             </ul>
             <div className='flex items-center gap-x-2 px-5 py-4 border border-gray-300 rounded-2xl'>
             <p className='font-semibold text-lg'>{freeMoney} Coin</p>
-            <TbCoinFilled className='text-2xl text-orange-600' />
+            <TbCoinFilled className='text-2xl text-orange-500' />
             </div>
         </div>
       </div>
