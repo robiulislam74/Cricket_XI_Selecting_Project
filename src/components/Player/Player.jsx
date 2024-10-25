@@ -8,8 +8,8 @@ const Player = ({player}) => {
     const {name,country,image,role,batting_type,bowling_type,bidding_price,rating} = player
   return (
     <div className='p-6 border border-gray-200 rounded-2xl space-y-4'>
-      <div className='h-60 w-full'>
-        <img className='rounded-2xl h-60 w-full' src={image} alt="" />
+      <div className='h-56 w-full'>
+        <img className='rounded-2xl h-56 w-full' src={image} alt="" />
       </div>
       <div className='flex gap-3 items-center'>
         <FaUserLarge className='text-xl font-bold'/>

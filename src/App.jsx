@@ -14,6 +14,7 @@ function App() {
   }
 
   return (
+   <>
     <div className='container mx-auto'>
       <Navbar/>
       <Banner/>
@@ -21,15 +22,16 @@ function App() {
       handleToggleButton={handleToggleButton}
       toggle={toggle}
       />
-      <div>
-        {toggle
-        ?
-        <Available_Players/>
-        :
-        <Selected_Players/>
-        }
-      </div>
     </div>
+    <div>
+    {toggle
+    ?
+    <Available_Players/>
+    :
+    <Selected_Players/>
+    }
+  </div>
+   </>
   )
 }
 
