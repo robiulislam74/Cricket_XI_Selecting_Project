@@ -1,18 +1,20 @@
 import React from 'react'
 import { RiDeleteBin6Line } from "react-icons/ri";
+import { FaDollarSign } from "react-icons/fa"
 
 
 const SelectedPlayer = ({selectedPlayer,handleDeleteSelectedPlayer}) => {
-    const {name,image,batting_type} = selectedPlayer
+    const {name,image,role,bidding_price} = selectedPlayer
   return (
     <div className='mb-6'>
       <div className='flex items-center justify-between p-6 border rounded-2xl'>
         <div className='flex items-center gap-x-6'>
-            <div className='w-20 h-20 bg-cover bg-center rounded-2xl'  
+            <div className='w-24 h-24 bg-cover bg-center rounded-2xl'  
             style={{backgroundImage: `url(${image})`}}></div>
-            <div className='space-y-3'>
+            <div className='space-y-1'>
                 <h4 className='text-2xl font-semibold'>{name}</h4>
-                <p>{batting_type}</p>
+                <p>{role}</p>
+                <p className='font-semibold flex items-center'>Price :<FaDollarSign className='ml-1'/> {bidding_price}</p>
             </div>
         </div>
         <div>

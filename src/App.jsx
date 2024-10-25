@@ -20,18 +20,20 @@ function App() {
     setFreeMoney(freeMoney + 300000)
   }
 
-  // const HandleMaximumSelectPlayerValidation = () =>{
-    
-  // }
 
   const handleChoosePlayerButton = (player) =>{
     const {bidding_price} = player
     if(freeMoney>=bidding_price){
       setFreeMoney(freeMoney - bidding_price)
       if(selectPlayers.length >= maximumNumberOfSelect){
-       alert("Warning! You can maximum 6 players select.")
+      return alert("Warning! You can maximum 6 players select.")
       }else{
-       return setSelectPlayers([...selectPlayers,player])
+        const isExist = selectPlayers.find(selectPlayer => selectPlayer.id === player.id)
+        isExist
+        ?
+        alert("Warning! Player already Selected.")
+        :
+        setSelectPlayers([...selectPlayers,player])
       }
       
     }else{
