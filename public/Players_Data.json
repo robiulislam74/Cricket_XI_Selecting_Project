@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "name": "Virat Kohli",
+      "country": "India",
+      "image": "https://i.ibb.co.com/ZX9B2TM/viraat-kohli-stats.webp",
+      "role": "Batsman",
+      "batting_type": "Right-hand Bat",
+      "bowling_type": "Right-arm Medium",
+      "bidding_price": 250000,
+      "rating": 9.8
+    },
+    {
+      "id": 11,
+      "name": "Pat Cummins",
+      "country": "Australia",
+      "image": "https://i.ibb.co.com/dmVd1xz/Whats-App-Image-2024-05-31-at-03-20-46.webp",
+      "role": "Bowler",
+      "batting_type": "Right-hand Bat",
+      "bowling_type": "Right-arm Fast",
+      "bidding_price": 280000,
+      "rating": 9.6
+    },
+    {
+      "id": 2,
+      "name": "Kane Williamson",
+      "country": "New Zealand",
+      "image": "https://i.ibb.co.com/wR4983D/Kane-Williamson-1024x768.webp",
+      "role": "Batsman",
+      "batting_type": "Right-hand Bat",
+      "bowling_type": "Right-arm Off Spin",
+      "bidding_price": 220000,
+      "rating": 9.4
+    },
+    {
+      "id": 4,
+      "name": "Ben Stokes",
+      "country": "England",
+      "image": "https://i.ibb.co.com/pwGZrqH/l18020220718183535.jpg",
+      "role": "All-rounder",
+      "batting_type": "Left-hand Bat",
+      "bowling_type": "Right-arm Fast Medium",
+      "bidding_price": 270000,
+      "rating": 9.6
+    },
+    {
+      "id": 5,
+      "name": "Babar Azam",
+      "country": "Pakistan",
+      "image": "https://i.ibb.co.com/f9K0VTZ/Babar-Azam.webp",
+      "role": "Batsman",
+      "batting_type": "Right-hand Bat",
+      "bowling_type": "Right-arm Off Spin",
+      "bidding_price": 230000,
+      "rating": 9.7
+    },
+    {
+      "id": 6,
+      "name": "Rashid Khan",
+      "country": "Afghanistan",
+      "image": "https://i.ibb.co.com/fSs6Vjz/Afghanistan-Spinner-Rashid-Khan-jpg.webp",
+      "role": "Bowler",
+      "batting_type": "Right-hand Bat",
+      "bowling_type": "Right-arm Leg Spin",
+      "bidding_price": 210000,
+      "rating": 9.3
+    },
+    {
+      "id": 7,
+      "name": "Quinton de Kock",
+      "country": "South Africa",
+      "image": "https://i.ibb.co.com/3srHv0V/l87220231012182432.webp",
+      "role": "Wicketkeeper",
+      "batting_type": "Left-hand Bat",
+      "bowling_type": "None",
+      "bidding_price": 150000,
+      "rating": 9.0
+    },
+    {
+      "id": 8,
+      "name": "David Warner",
+      "country": "Australia",
+      "image": "https://i.ibb.co.com/7YV4Bh5/l9420240101095810.webp",
+      "role": "Batsman",
+      "batting_type": "Left-hand Bat",
+      "bowling_type": "Right-arm Leg Spin",
+      "bidding_price": 240000,
+      "rating": 9.2
+    },
+    {
+      "id": 9,
+      "name": "Shaheen Afridi",
+      "country": "Pakistan",
+      "image": "https://i.ibb.co.com/b5DgvmH/shaheen-afridi.jpg",
+      "role": "Bowler",
+      "batting_type": "Left-hand Bat",
+      "bowling_type": "Left-arm Fast",
+      "bidding_price": 200000,
+      "rating": 9.4
+    },
+    {
+      "id": 10,
+      "name": "Hardik Pandya",
+      "country": "India",
+      "image": "https://i.ibb.co.com/rZSGqCB/Hardik-Pandya-Reuters.webp",
+      "role": "All-rounder",
+      "batting_type": "Right-hand Bat",
+      "bowling_type": "Right-arm Fast Medium",
+      "bidding_price": 260000,
+      "rating": 9.5
+    },
+    {
+      "id": 3,
+      "name": "Jasprit Bumrah",
+      "country": "India",
+      "image": "https://i.ibb.co.com/QYmfCPq/bumrah-profile1700146502576.jpg",
+      "role": "Bowler",
+      "batting_type": "Right-hand Bat",
+      "bowling_type": "Right-arm Fast",
+      "bidding_price": 180000,
+      "rating": 9.5
+    }
+  ]
