@@ -2,7 +2,7 @@ import React from 'react'
 import bgShadow from '../../assets/images/bg-shadow.png'
 import bannerImg from '../../assets/images/banner-main.png'
 
-const Banner = () => {
+const Banner = ({handleClaimFreeCreditButton}) => {
   return (
     <>
     <div className='bg-gray-950 rounded-3xl mb-20'>
@@ -14,7 +14,7 @@ const Banner = () => {
         <p className='font-medium text-2xl text-gray-400'>Beyond Boundaries Beyond Limits</p>
         
         <div className='outline outline-2 outline-offset-2 outline-yellow-400 p-1 rounded-lg'>
-        <button className='py-3 px-5 bg-yellow-400 rounded-lg font-bold text-black'>Claim Free Credit</button>
+        <button onClick={handleClaimFreeCreditButton} className='py-3 px-5 bg-yellow-400 rounded-lg font-bold text-black'>Claim Free Credit</button>
         </div>
       </div>
     </div>

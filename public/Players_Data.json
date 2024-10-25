@@ -11,7 +11,7 @@
       "rating": 9.8
     },
     {
-      "id": 11,
+      "id": 2,
       "name": "Pat Cummins",
       "country": "Australia",
       "image": "https://i.ibb.co.com/dmVd1xz/Whats-App-Image-2024-05-31-at-03-20-46.webp",
@@ -22,15 +22,15 @@
       "rating": 9.6
     },
     {
-      "id": 2,
-      "name": "Kane Williamson",
-      "country": "New Zealand",
-      "image": "https://i.ibb.co.com/wR4983D/Kane-Williamson-1024x768.webp",
+      "id": 3,
+      "name": "Babar Azam",
+      "country": "Pakistan",
+      "image": "https://i.ibb.co.com/f9K0VTZ/Babar-Azam.webp",
       "role": "Batsman",
       "batting_type": "Right-hand Bat",
       "bowling_type": "Right-arm Off Spin",
-      "bidding_price": 220000,
-      "rating": 9.4
+      "bidding_price": 230000,
+      "rating": 9.7
     },
     {
       "id": 4,
@@ -45,14 +45,14 @@
     },
     {
       "id": 5,
-      "name": "Babar Azam",
-      "country": "Pakistan",
-      "image": "https://i.ibb.co.com/f9K0VTZ/Babar-Azam.webp",
+      "name": "Kane Williamson",
+      "country": "New Zealand",
+      "image": "https://i.ibb.co.com/wR4983D/Kane-Williamson-1024x768.webp",
       "role": "Batsman",
       "batting_type": "Right-hand Bat",
       "bowling_type": "Right-arm Off Spin",
-      "bidding_price": 230000,
-      "rating": 9.7
+      "bidding_price": 220000,
+      "rating": 9.4
     },
     {
       "id": 6,
@@ -110,7 +110,7 @@
       "rating": 9.5
     },
     {
-      "id": 3,
+      "id": 11,
       "name": "Jasprit Bumrah",
       "country": "India",
       "image": "https://i.ibb.co.com/QYmfCPq/bumrah-profile1700146502576.jpg",

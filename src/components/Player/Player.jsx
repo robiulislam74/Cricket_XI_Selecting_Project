@@ -4,7 +4,7 @@ import { FaFlag } from "react-icons/fa"
 import { FaDollarSign } from "react-icons/fa"
 
 
-const Player = ({player}) => {
+const Player = ({player,handleChoosePlayerButton}) => {
     const {name,country,image,role,batting_type,bowling_type,bidding_price,rating} = player
   return (
     <div className='p-6 border border-gray-200 rounded-2xl space-y-4'>
@@ -30,7 +30,7 @@ const Player = ({player}) => {
       </div>
       <div className='flex justify-between items-center'>
         <p className='font-bold flex items-center'>Price: <FaDollarSign className='ml-2'/> {bidding_price}</p>
-        <button className="px-4 py-2 rounded-lg hover:bg-yellow-400 duration-200 border border-gray-200">Choose Player</button>
+        <button onClick={()=> handleChoosePlayerButton(player)} className="px-4 py-2 rounded-lg hover:bg-yellow-400 duration-200 border border-gray-200">Choose Player</button>
       </div>
     </div>
   )
