@@ -3,7 +3,7 @@ import Footer from '../Footer/Footer'
 import NewsLatter from '../NewsLatter/NewsLatter'
 import SelectedPlayer from '../SelectedPlayer/SelectedPlayer'
 
-const Selected_Players = ({selectPlayers}) => {
+const Selected_Players = ({selectPlayers,handleDeleteSelectedPlayer}) => {
   return (
     <>
     <div className='container mx-auto'>
@@ -11,6 +11,7 @@ const Selected_Players = ({selectPlayers}) => {
       selectPlayers.map(selectedPlayer => <SelectedPlayer 
         key={selectedPlayer.id} 
         selectedPlayer={selectedPlayer} 
+        handleDeleteSelectedPlayer={handleDeleteSelectedPlayer}
         /> )
     }
     </div>

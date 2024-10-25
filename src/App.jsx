@@ -10,6 +10,7 @@ function App() {
   const [toggle,setToggle] = useState(true)
   const [freeMoney,setFreeMoney] = useState(0)
   const [selectPlayers,setSelectPlayers] = useState([])
+  const [maximumNumberOfSelect,setMaximumNumberOfSelect] = useState(6)
 
   const handleToggleButton = () =>{
     setToggle(!toggle)
@@ -19,14 +20,28 @@ function App() {
     setFreeMoney(freeMoney + 300000)
   }
 
+  // const HandleMaximumSelectPlayerValidation = () =>{
+    
+  // }
+
   const handleChoosePlayerButton = (player) =>{
     const {bidding_price} = player
     if(freeMoney>=bidding_price){
       setFreeMoney(freeMoney - bidding_price)
-      return setSelectPlayers([...selectPlayers,player])
+      if(selectPlayers.length >= maximumNumberOfSelect){
+       alert("Warning! You can maximum 6 players select.")
+      }else{
+       return setSelectPlayers([...selectPlayers,player])
+      }
+      
     }else{
       return alert("Not Available Your Coin!")
     }
+  }
+
+  const handleDeleteSelectedPlayer = (deletePlayer) =>{
+    const deletedPlayer = selectPlayers.filter(selectPlayer => selectPlayer.id !== deletePlayer.id)
+    setSelectPlayers(deletedPlayer)
   }
 
   return (
@@ -41,6 +56,8 @@ function App() {
       <Available 
       handleToggleButton={handleToggleButton}
       toggle={toggle}
+      selectPlayers={selectPlayers}
+      maximumNumberOfSelect={maximumNumberOfSelect}
       />
     </div>
     <div>
@@ -52,6 +69,7 @@ function App() {
     :
     <Selected_Players
     selectPlayers={selectPlayers}
+    handleDeleteSelectedPlayer={handleDeleteSelectedPlayer}
     />
     }
   </div>

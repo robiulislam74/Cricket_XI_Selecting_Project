@@ -2,7 +2,7 @@ import React from 'react'
 import { RiDeleteBin6Line } from "react-icons/ri";
 
 
-const SelectedPlayer = ({selectedPlayer}) => {
+const SelectedPlayer = ({selectedPlayer,handleDeleteSelectedPlayer}) => {
     const {name,image,batting_type} = selectedPlayer
   return (
     <div className='mb-6'>
@@ -16,7 +16,7 @@ const SelectedPlayer = ({selectedPlayer}) => {
             </div>
         </div>
         <div>
-            <RiDeleteBin6Line className='text-2xl text-red-500'/>
+            <RiDeleteBin6Line onClick={()=>handleDeleteSelectedPlayer(selectedPlayer)} className='text-2xl text-red-500 hover:text-red-300 duration-300'/>
         </div>
       </div>
     </div>
