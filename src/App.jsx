@@ -55,7 +55,7 @@ function App() {
   const handleDeleteSelectedPlayer = (deletePlayer) =>{
     const deletedPlayer = selectPlayers.filter(selectPlayer => selectPlayer.id !== deletePlayer.id)
     setSelectPlayers(deletedPlayer)
-    toast.warning("Player Removed!")
+    toast.warning(`${deletePlayer.name} removed from in your squad`)
   }
 
 
