@@ -7,12 +7,12 @@ const SelectedPlayer = ({selectedPlayer,handleDeleteSelectedPlayer}) => {
     const {name,image,role,bidding_price} = selectedPlayer
   return (
     <div className='mb-6'>
-      <div className='flex items-center justify-between p-6 border rounded-2xl'>
-        <div className='flex items-center gap-x-6'>
+      <div className='flex md:items-center justify-between p-6 border rounded-2xl'>
+        <div className='md:flex space-y-3 md:space-y-0 items-center gap-x-6'>
             <div className='w-24 h-24 bg-cover bg-center rounded-2xl'  
             style={{backgroundImage: `url(${image})`}}></div>
             <div className='space-y-1'>
-                <h4 className='text-2xl font-semibold'>{name}</h4>
+                <h4 className='md:text-2xl text-xl font-semibold'>{name}</h4>
                 <p>{role}</p>
                 <p className='font-semibold flex items-center'>Price :<FaDollarSign className='ml-1'/> {bidding_price}</p>
             </div>

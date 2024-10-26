@@ -14,7 +14,7 @@ const Available_Players = ({handleChoosePlayerButton}) => {
 
   return (
     <>
-    <div className='container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-32 md:mb-72'>
+    <div className='lg:px-0 px-6 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-52 md:mb-72'>
       {
         players.map(player => <Player key={player.id} player={player} handleChoosePlayerButton={handleChoosePlayerButton}/> )
       }

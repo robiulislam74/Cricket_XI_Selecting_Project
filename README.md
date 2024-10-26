@@ -12,11 +12,13 @@ Cricket_XI_Select allows users to create their own cricket squad by selecting pl
 
 ## Technologies :
 
-1. React
+1. HTML and JavaScript (ES6)
 
-2. Fetch API for API requests
+2. React
 
-3. Tailwind CSS or DaisyUI for styling
+3. Fetch API for API requests
+
+4. Tailwind CSS or DaisyUI for styling
 ## Key Features :
 
 1. Users can click the "Claim Free Credit" button to receive initial free credits for buying players.

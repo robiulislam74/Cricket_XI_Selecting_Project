@@ -19,7 +19,7 @@ function App() {
   }
 
   const handleClaimFreeCreditButton = () =>{
-    setFreeMoney(freeMoney + 300000)
+    setFreeMoney(freeMoney + 600000)
   }
 
 
@@ -61,13 +61,13 @@ function App() {
 
   return (
    <>
-    <div className='container mx-auto'>
+    <Navbar 
+      freeMoney={freeMoney}
+      />
+    <div className='container mx-auto lg:px-0 px-5'>
     <div>
     <ToastContainer/>
     </div>
-      <Navbar 
-      freeMoney={freeMoney}
-      />
       <Banner
       handleClaimFreeCreditButton={handleClaimFreeCreditButton}
       />
