@@ -19,7 +19,10 @@ function App() {
   }
 
   const handleClaimFreeCreditButton = () =>{
-    setFreeMoney(freeMoney + 600000)
+    setFreeMoney(freeMoney + 900000)
+    toast.success(`${900000} credit added to your account`, {
+      position: "top-center"
+    })
   }
 
 
